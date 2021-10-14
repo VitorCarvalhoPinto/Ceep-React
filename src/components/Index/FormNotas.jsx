@@ -25,6 +25,11 @@ export default class FormNotas extends Component {
         this.props.criarNota(this.titulo, this.texto);
     }
 
+    Screenshot(){
+        let div = document.querySelectorAll('.screenshot')
+        console.log('baixar imagem ainda n disponivel')
+    }
+
     render() {
         return (
             <div className="esquerda">
@@ -33,7 +38,10 @@ export default class FormNotas extends Component {
                     <input  type="text" placeholder="escreva sua nota" className="corpo-texto" onChange={this._handleMudancaTexto.bind(this)} />
                     <button className="botao">Criar Nota</button>
                 </form>
+                <button onClick={this.Screenshot} className="screenshot botao">Tirar Foto</button>
             </div>
         );
+
+        
     }
 }
