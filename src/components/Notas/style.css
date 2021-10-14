@@ -1,0 +1,36 @@
+.lista-notas{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.notas{
+    padding: 10px 0 10px 5px;
+    margin-top: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(224, 224, 224);
+    background-color: rgb(224, 224, 224);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.direita{
+    display: inline-block;
+    width: 68vw;
+}
+
+.categoria{
+    font-size: 20px;
+}
+
+.notas h3{
+    font-weight: bold;
+}
+
+.notas p, .notas h3{
+    padding: 10px 0 10px 0;
+}

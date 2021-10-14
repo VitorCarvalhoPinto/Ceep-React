@@ -1,0 +1,38 @@
+.titulo, .botao, .corpo-texto{
+    width: 100%;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    padding: 10px;
+    color: black;
+    border-radius: 3px ;
+    display: block;
+    min-width: 60px;
+    margin-top: 20px;
+}
+
+.titulo, .corpo-texto{
+    box-sizing: border-box;
+}
+
+.botao:hover{
+    background-color: rgb(165, 165, 165);
+}
+
+.botao:active{
+    background-color: rgb(184, 184, 184);
+}
+
+.esquerda{
+    display: inline-block;
+    width: 30vw;
+    border-right: 2px solid #c2c2c2;
+    text-align: center;
+    height: 100vw;
+}
+
+.formulario{
+    text-align: center;
+    display: inline-block;
+    margin-top: 60px;
+    width: 60%;
+}
