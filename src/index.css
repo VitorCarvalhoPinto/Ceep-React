@@ -2,7 +2,7 @@
   v2.0 | 20110126
   License: none (public domain)
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,4 +54,10 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+}
+
+body{
+    font-family: 'Noto Sans Mono', monospace;
+    background-color: #BBD0FA;
+    color: #332C1C;
 }

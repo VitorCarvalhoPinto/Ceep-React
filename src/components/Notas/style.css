@@ -1,3 +1,11 @@
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    margin: 30px;
+}
+
 .lista-notas{
     list-style-type: none;
     display: flex;
@@ -9,18 +17,25 @@
 .notas{
     padding: 10px 0 10px 5px;
     margin-top: 30px;
+    margin-bottom: 30px;
     border-radius: 3px;
-    border: 1px solid rgb(224, 224, 224);
-    background-color: rgb(224, 224, 224);
+    background-color: #DEE8FA;
     width: 20%;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
+i{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .direita{
     display: inline-block;
     width: 68vw;
+    position: absolute;
+    background-color: #BBD0FA;
 }
 
 .categoria{
@@ -33,4 +48,9 @@
 
 .notas p, .notas h3{
     padding: 10px 0 10px 0;
+}
+
+.check{
+    text-decoration-line: line-through; 
+    -webkit-text-decoration-line: line-through;
 }

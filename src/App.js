@@ -8,7 +8,7 @@ class App extends Component{
   constructor(){
     super(); 
     this.state = {
-      notas: []
+      notas: [],
     }
   }
 
@@ -22,11 +22,19 @@ class App extends Component{
     this.setState(novoState)
   }
 
+  deletarNota(index){
+    let arrayNotas = this.state.notas
+    arrayNotas.splice(index,1)
+    this.setState({arrayNotas})
+  }
+
   render(){
     return (
       <section>
         <FormNotas criarNota={this.criarNota.bind(this)}/>
-        <ListaDeNotas notas={this.state.notas}/>
+        <ListaDeNotas 
+        apagarNota={this.deletarNota.bind(this)}
+        notas={this.state.notas}/>
       </section>
       );
   }
