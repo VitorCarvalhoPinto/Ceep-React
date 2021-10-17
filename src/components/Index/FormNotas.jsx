@@ -31,7 +31,7 @@ export default class FormNotas extends Component {
         html2canvas(document.querySelector('.direita')).then(function (canvas) {
             var anchorTag = document.createElement("a");
             document.body.appendChild(anchorTag);
-            anchorTag.download = "teste.jpg";
+            anchorTag.download = "Mural de Notas.jpg";
             anchorTag.href = canvas.toDataURL();
             anchorTag.target = '_blank';
             anchorTag.click();
